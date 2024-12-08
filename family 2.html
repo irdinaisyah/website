@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('https://png.pngtree.com/thumb_back/fw800/background/20240322/pngtree-beautiful-colorfull-garden-with-flowers-image_15677452.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .gallery-container {
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      padding: 10px;
+      max-width: 800px;
+      width: 100%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .gallery-container h1 {
+      text-align: center;
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-areas: 
+        "img1 video img2"
+        "img3 video img4"
+        "img5 img6 img7";
+      grid-gap: 2px;
+    }
+
+    .gallery img, .gallery video {
+      width: 90%;
+      height: 90%;
+      object-fit: cover;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .video {
+      grid-area: video;
+      width: 150%;
+      height: 100px;
+    }
+
+    .img1 { grid-area: img1; }
+    .img2 { grid-area: img2; }
+    .img3 { grid-area: img3; }
+    .img4 { grid-area: img4; }
+
+    .square {
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery-container">
+    <h1>Family Gallery</h1>
+    <div class="gallery">
+      <img src="family.jpg" class="family" alt="family">
+      <video class="video" controls>
+        <source src="videofam.mp4" type="video/mp4">
+      </video>
+      <img src="family 2.jpg" class="family 2" alt="family 2">
+      <img src="family 3.jpg" class="family 3" alt="family 3">
+      <img src="family 4.jpg" class="family 4" alt="family 4">
+    </div>
+	<div class="navigation-buttons">
+        <a href="file:///C:/Users/user/Desktop/CODING/familiy.html#back" class="button">Back</a>
+  </div>
+</body>
+</html>
+
+
+
